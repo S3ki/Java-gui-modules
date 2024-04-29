@@ -7,17 +7,15 @@ public class DictionaryController {
 
     public DictionaryController() {
         dictionary = new Dictionary();
-        populateDictionary(); // Add some default words
+        populateDictionary();
     }
 
-    // Function to add words to the dictionary
     private void populateDictionary() {
-        dictionary.addWord("Java", "A high-level programming language.");
-        dictionary.addWord("Python", "An interpreted, high-level, general-purpose programming language.");
-        dictionary.addWord("Dictionary", "A reference resource containing a list of words and their meanings.");
+        dictionary.addWord("Metropolia", "University of Applied Sciences");
+        dictionary.addWord("Helsinki", "Capital of Finland");
+        dictionary.addWord("Dictionary", "A reference resource containing words meanings.");
     }
 
-    // Method to search for a word and retrieve its meaning
     public String searchWord(String word) {
         return dictionary.searchWord(word);
     }
